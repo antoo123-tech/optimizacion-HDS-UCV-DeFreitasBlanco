@@ -14,6 +14,7 @@ from main import (
 
 st.set_page_config(page_title="Optimización HDS", layout="wide")
 st.title("Optimización Multiobjetivo de una Unidad HDS")
+st.caption("Creado por Jose De Freitas y Crisbely Blanco")
 st.write("Explora la frontera de Pareto y el *knee point* variando las condiciones del proceso.")
 
 # --- Barra lateral (controles) ---
