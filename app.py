@@ -86,7 +86,11 @@ if len(pareto) >= 2:
     ax.set_title("Compromiso entre no-conversión de azufre y carga del horno")
     ax.grid(True, linestyle="--", alpha=0.4)
     ax.legend()
-    plt.tight_layout()
+
+    try:
+        fig.tight_layout()
+    except ValueError:
+        pass
 
     st.pyplot(fig)
 
@@ -127,7 +131,11 @@ if len(pareto) >= 2:
     ax_n.set_title("Distancia perpendicular a la recta de extremos")
     ax_n.grid(True, linestyle="--", alpha=0.4)
     ax_n.legend()
-    plt.tight_layout()
+
+    try:
+        fig_norm.tight_layout()
+    except ValueError:
+        pass
 
     st.pyplot(fig_norm)
 
